@@ -1,0 +1,26 @@
+{
+  "name": "@oneislandearth/gcode",
+  "private": false,
+  "version": "0.0.1",
+  "description": "A simple library for generating G-Code in Javascript",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oneislandearth/gcode.git"
+  },
+  "keywords": [
+    "gcode",
+    "g-code",
+    "gcode-js",
+    "nc",
+    "cnc",
+    "cam",
+    "oneisland"
+  ],
+  "author": "OneIsland Limited <team@oneisland.io>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/oneislandearth/gcode/issues"
+  },
+  "homepage": "https://github.com/oneislandearth/gcode#readme"
+}
