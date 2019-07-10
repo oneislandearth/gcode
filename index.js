@@ -1,4 +1,4 @@
-// G-Code generator using Javascript
+~// G-Code generator using Javascript
 class GCode {
 
   constructor({ name, start, finish, unit, positioning, feedrate, clearance, lines }) {
@@ -255,47 +255,3 @@ class GCode {
     return this.eval();
   }
 }
-
-// import { GCode } from 'gcode-js';
-
-const code = new GCode({
-
-  // Define our script name
-  name: '123',
-
-  // Define our scale to use (default is mm)
-  units: 'cm',
-  
-  // Define the starting x and y position
-  start: [0, 0],
-
-  // Set our clearance height to 10cm
-  clearance: 10,
-});
-
-// Start the spindle
-code.startSpindle();
-
-// Start the coolant
-code.startCoolant();
-
-// Drop the mill to the bottom of the board
-code.dropMill();
-
-// Cut lengthways 65.5cm
-code.feedLinear([0, 65.5]);
-
-// Cut sideways 23.4cm
-code.feedLinear([23.4, 65.5]);
-
-// Cut diagonally to a point (12.28cm sideways, midpoint lengthways)
-code.feedLinear([12.8, (65.5 / 2)]);
-
-// Cut back to the start lengthways
-code.feedLinear([12.8, 0])
-
-// Cut back to the starting point
-code.feedLinear([0, 0]);
-
-// Output our code to console
-console.log(`${code}`);
