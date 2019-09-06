@@ -4,10 +4,10 @@ A simple library for generating G-Code in Javascript
 
 ## Installation
 
-[gcode](https://github.com/oneislandearth/gcode) is available through the [npm registry](https://www.npmjs.com/package/@oneislandearth/gcode):
+[gcode](https://github.com/oneislandearth/gcode) is available through the [npm registry](https://www.npmjs.com/package/@oneisland/gcode):
 
 ```bash
-$ npm install @oneislandearth/gcode
+$ npm install @oneisland/gcode
 ```
 
 ## Usage

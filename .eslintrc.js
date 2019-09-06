@@ -1,0 +1,1 @@
+/media/data/OneIsland/Platform/gcode/node_modules/@oneisland/linter/resources/.eslintrc.js

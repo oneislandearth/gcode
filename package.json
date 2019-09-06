@@ -1,13 +1,8 @@
 {
-  "name": "@oneislandearth/gcode",
+  "name": "@oneisland/gcode",
   "private": false,
-  "version": "0.0.2",
+  "version": "0.0.1",
   "description": "A simple library for generating G-Code in Javascript",
-  "main": "index.js",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/oneislandearth/gcode.git"
-  },
   "keywords": [
     "gcode",
     "g-code",
@@ -17,10 +12,20 @@
     "cam",
     "oneisland"
   ],
-  "author": "OneIsland Limited <team@oneisland.io>",
-  "license": "MIT",
+  "main": "lib/index.js",
+  "dependencies": {
+    "@oneisland/linter": "0.0.4"
+  },
+  "homepage": "https://github.com/oneislandearth/gcode#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oneislandearth/gcode.git"
+  },
   "bugs": {
     "url": "https://github.com/oneislandearth/gcode/issues"
   },
-  "homepage": "https://github.com/oneislandearth/gcode#readme"
+  "contributors": [
+    "Daniel Larkin <daniel@oneisland.io>"
+  ],
+  "license": "MIT"
 }
