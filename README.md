@@ -1,10 +1,29 @@
-# GCode
+<p align="center">
+  <a href="https://github.com/oneislandearth/gcode" target="_blank">
+    <img src="https://i.imgur.com/yRaNfsL.png">
+  </a>
+</p>
+
+<p align="center">
+  <a href="https://greenkeeper.io" target="_blank">
+  <img src="https://badges.greenkeeper.io/oneislandearth/gcode.svg"></a>
+  <a href="https://travis-ci.org" target="_blank">
+  <img src="https://api.travis-ci.org/oneislandearth/gcode.svg?branch=master"></a>
+  <a href="https://packagephobia.now.sh/result?p=@oneisland/gcode" target="_blank">
+  <img src="https://packagephobia.now.sh/badge?p=@oneisland/gcode"></a>
+  <a href="https://snyk.io/vuln/search?q=@oneisland/gcode&type=npm" target="_blank">
+  <img src="https://img.shields.io/snyk/vulnerabilities/github/oneislandearth/gcode.svg"></a>
+  <a href="https://www.npmjs.com/package/@oneisland/gcode" target="_blank">
+  <img src="https://img.shields.io/npm/l/@oneisland/gcode.svg"></a>
+</p>
+
+***
 
 A simple library for generating G-Code in Javascript
 
 ## Installation
 
-[gcode](https://github.com/oneislandearth/gcode) is available through the [npm registry](https://www.npmjs.com/package/@oneisland/gcode):
+[GCode](https://github.com/oneislandearth/gcode) is available through the [npm registry](https://www.npmjs.com/package/@oneisland/gcode):
 
 ```bash
 $ npm install @oneisland/gcode
@@ -12,26 +31,26 @@ $ npm install @oneisland/gcode
 
 ## Usage
 
-An example use of the code could be as follows;
+After installing GCode you can use the module like so:
 
-###### example.js
+###### example-usage.js
 ```js
 // Import the library
-import { GCode } from '@oneislandearth/gcode';
+import { GCode } from '@oneisland/gcode';
 
 // Create a new code section
 const code = new GCode({
 
-  // Define our script name
+  // Define the script name
   name: '123',
 
-  // Define our scale to use (default is mm)
+  // Define the scale to use (default is mm)
   units: 'cm',
   
   // Define the starting x and y position
   start: [0, 0],
 
-  // Set our clearance height to 10cm
+  // Set the clearance height to 10cm
   clearance: 10,
 });
 
@@ -59,14 +78,14 @@ code.feedLinear([12.8, 0])
 // Cut back to the starting point
 code.feedLinear([0, 0]);
 
-// Output our code to console
-console.log(`${code}`);
+// Output the code to console
+console.log(String(code));
 ```
 
 Execute the example code:
 
 ```bash
-$ node example.js
+$ node example-usage.js
 ```
 
 Expected output:

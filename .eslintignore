@@ -1,1 +1,3 @@
-/media/data/OneIsland/Platform/gcode/node_modules/@oneisland/linter/resources/.eslintignore
+*.json
+dist
+node_modules

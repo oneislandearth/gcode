@@ -1,7 +1,7 @@
 {
   "name": "@oneisland/gcode",
   "private": false,
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A simple library for generating G-Code in Javascript",
   "keywords": [
     "gcode",
@@ -12,9 +12,16 @@
     "cam",
     "oneisland"
   ],
-  "main": "lib/index.js",
-  "dependencies": {
-    "@oneisland/linter": "0.0.4"
+  "main": "lib/gcode.js",
+  "scripts": {
+    "build": "oneisland-babler lib",
+    "test": "npm run build && ava",
+    "prepublishOnly": "npm run build"
+  },
+  "devDependencies": {
+    "@oneisland/babler": "0.0.7",
+    "@oneisland/linter": "0.0.9",
+    "ava": "^2.4.0"
   },
   "homepage": "https://github.com/oneislandearth/gcode#readme",
   "repository": {

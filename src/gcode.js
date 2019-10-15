@@ -1,5 +1,5 @@
-// G-Code generator using Javascript
-class GCode {
+// Generate GCode instructions
+export class GCode {
 
   // Create an instance of GCode
   constructor({ name, start, finish, unit, positioning, feedrate, clearance, lines }) {
@@ -102,13 +102,13 @@ class GCode {
     if (Array.isArray(position)) position = { x: position[0], y: position[1], z: position[2] };
 
     // If there is an x coordinate then add it to the positions
-    if (position.x !== null) positions.push(`X${this.scale(position.x)}`);
+    if (position.x !== undefined) positions.push(`X${this.scale(position.x)}`);
 
     // If there is an y coordinate then add it to the positions
-    if (position.y !== null) positions.push(`Y${this.scale(position.y)}`);
+    if (position.y !== undefined) positions.push(`Y${this.scale(position.y)}`);
 
     // If there is an z coordinate then add it to the positions
-    if (position.z !== null) positions.push(`Z${this.scale(position.z)}`);
+    if (position.z !== undefined) positions.push(`Z${this.scale(position.z)}`);
 
     // Return the position words
     return positions.join(` `);

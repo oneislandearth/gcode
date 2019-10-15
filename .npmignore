@@ -1,0 +1,7 @@
+# Ignore the development files when on NPM
+src
+tests
+.babelrc.js
+.eslint*
+.travis.yml
+jsconfig.json
