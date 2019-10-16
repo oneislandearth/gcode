@@ -20,7 +20,7 @@
   },
   "devDependencies": {
     "@oneisland/babler": "0.0.7",
-    "@oneisland/linter": "0.0.9",
+    "@oneisland/linter": "0.0.10",
     "ava": "^2.4.0"
   },
   "homepage": "https://github.com/oneislandearth/gcode#readme",
